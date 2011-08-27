@@ -1,0 +1,15 @@
+============
+Buildout Tox
+============
+
+This is a buildout recipe to build and test packages in multiple
+environments. It is inspired by Holger Krekel's excellent Tox__
+package for virtualenv__ but focuses instead on package development
+using buildout__.
+
+For full documentation, please see
+http://packages.python.org/buildout-tox/use.html.
+
+__ http://codespeak.net/tox
+__ http://www.virtualenv.org/
+__ http://pypi.python.org/pypi/zc.buildout/1.5.2
