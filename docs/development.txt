@@ -11,7 +11,7 @@ Setting up the buildout
 
 All development requires that you run the buildout::
 
-  $ python bootstrap.py
+  $ python buildout_tox/bootstrap.py
   $ bin/buildout
 
 Running the tests
