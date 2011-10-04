@@ -77,7 +77,8 @@ parts =
 
         self.output.compare(
             # spurious output, not to worry about...
-            "Couldn't find index page for 'zc.recipe.egg' (maybe misspelled?)"
+            "Couldn't find index page for 'zc.recipe.egg' (maybe misspelled?)\n"
+            "Couldn't find index page for 'argparse' (maybe misspelled?)"
             )
 
     def test_rerun(self):

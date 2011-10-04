@@ -28,6 +28,7 @@ setup(
     zip_safe=False,
     include_package_data=True,
     install_requires=[
+        'argparse',
         'zc.buildout>=1.5.0,<2.0',
         'zc.recipe.egg',
     ],
