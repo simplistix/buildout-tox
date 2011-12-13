@@ -16,7 +16,7 @@ master_doc = 'index'
 project = pkg_info.name
 
 # copyright
-first_year = 2010
+first_year = 2011
 current_year = datetime.datetime.now().year
 if first_year==current_year:
     date_str = str(current_year)
