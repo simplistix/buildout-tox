@@ -66,9 +66,17 @@ class Recipe(object):
                 ) as (source, destination):
                 destination.write(source.read())
 
-            # buildout.cfg
-            with file(os.path.join(env_path, 'buildout.cfg'), 'w') as conf_file:
+            # build.cfg
+            with file(os.path.join(env_path, 'build.cfg'), 'w') as conf_file:
                 conf_file.write(self.options['config']+'\n')
+
+            # develop.cfg
+            with file(os.path.join(env_path, 'develop.cfg'), 'w') as conf_file:
+                conf_file.write("""
+[buildout]
+extends = build.cfg
+develop = ../../..
+""")
 
         with open(os.path.join(tox_path, 'tox.cfg'), 'w') as outfile:
             tox_config.write(outfile)

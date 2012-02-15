@@ -36,6 +36,9 @@ setup(
         'zc.buildout': [
             'default = buildout_tox.recipe:Recipe',
             ],
+        'console_scripts' : [
+            'tox = buildout_tox.tox:main',
+            ],
         },
     extras_require=dict(
            test=[

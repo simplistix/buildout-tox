@@ -1,0 +1,15 @@
+running tox
+===========
+ 
+"build mode"::
+
+  bin/tox build
+  bin/tox bootstrap
+  bin/tox buildout build.cfg [--offline]
+  bin/tox test
+
+"develop mode"::
+
+  bin/tox bootstrap
+  bin/tox buildout develop.cfg [--offline]
+  bin/tox test
